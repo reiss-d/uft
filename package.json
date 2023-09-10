@@ -13,7 +13,8 @@
       "test": "FORCE_COLOR=1 pnpm turbo run test --continue",
       "dev": "FORCE_COLOR=1 pnpm turbo run dev",
       "typedoc": "FORCE_COLOR=1 pnpm turbo run typedoc",
-      "release": "NODE_ENV=production FORCE_COLOR=1 pnpm turbo run release && pnpm changeset version && pnpm changeset publish"
+      "bump": "pnpm changeset version",
+      "release": "NODE_ENV=production FORCE_COLOR=1 pnpm turbo run release && pnpm changeset publish"
    },
    "devDependencies": {
       "@changesets/cli": "^2.26.2",
