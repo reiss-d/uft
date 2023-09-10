@@ -1,0 +1,18 @@
+{
+   "window.title": "uft",
+   "editor.formatOnSave": true,
+   "editor.defaultFormatter": "dprint.dprint",
+   "[json]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "dprint.dprint"
+   },
+   "[markdown]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "dprint.dprint"
+   },
+   "files.exclude": {
+      "**/.turbo": true,
+      "**/.swc": true
+   },
+   "typescript.tsdk": "node_modules/typescript/lib"
+}

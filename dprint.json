@@ -1,0 +1,35 @@
+{
+   "lineWidth": 80,
+   "typescript": {
+      "indentWidth": 3,
+      "quoteStyle": "preferSingle",
+      "semiColons": "asi",
+      "useBraces": "always",
+      "trailingCommas": "onlyMultiLine",
+      "arguments.trailingCommas": "never",
+      "parameters.trailingCommas": "never",
+      "arrowFunction.useParentheses": "force",
+      "binaryExpression.operatorPosition": "sameLine",
+      "conditionalType.operatorPosition": "maintain",
+      "conditionalType.preferSingleLine": false,
+      "importDeclaration.sortNamedImports": "caseSensitive",
+      "module.sortImportDeclarations": "caseSensitive"
+   },
+   "json": {
+      "indentWidth": 3,
+      "associations": ["**/*.json", ".swcrc"]
+   },
+   "markdown": {},
+   "includes": ["**/*.{ts,tsx,js,jsx,cjs,mjs,json,swcrc,md}"],
+   "excludes": [
+      "**/node_modules",
+      "**/.swc",
+      "**/.turbo",
+      "**/dist"
+   ],
+   "plugins": [
+      "https://plugins.dprint.dev/typescript-0.86.1.wasm",
+      "https://plugins.dprint.dev/json-0.17.4.wasm",
+      "https://plugins.dprint.dev/markdown-0.15.3.wasm"
+   ]
+}

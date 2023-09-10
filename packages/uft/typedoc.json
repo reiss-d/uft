@@ -1,0 +1,28 @@
+{
+   "$schema": "https://typedoc.org/schema.json",
+   "entryPoints": ["./src"],
+   "entryPointStrategy": "resolve",
+   "out": "../../docs",
+   "tsconfig": "./tsconfig.build.json",
+   "exclude": [
+      "**/*.spec.ts",
+      "**/temp/*.ts",
+      "**/*-temp/*.ts",
+      "**/*.temp.*"
+   ],
+   "groupOrder": ["Functions", "*", "Modules"],
+   "categoryOrder": ["*", "Misc"],
+   "navigation": {
+      "includeCategories": true,
+      "includeGroups": true
+   },
+   "categorizeByGroup": true,
+   "excludeExternals": true,
+   "excludeInternal": true,
+   "hideParameterTypesInTitle": false,
+   "darkHighlightTheme": "github-dark",
+   "plugin": [
+      "typedoc-plugin-missing-exports",
+      "typedoc-plugin-mdn-links"
+   ]
+}

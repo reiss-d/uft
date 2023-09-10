@@ -1,0 +1,58 @@
+{
+   "name": "uft-repo",
+   "version": "0.0.0",
+   "license": "MIT",
+   "description": "A collection of performant, strongly typed utilities to aid your Typescript application.",
+   "private": true,
+   "homepage": "https://github.com/reiss-d/uft#readme",
+   "repository": "https://github.com/reiss-d/uft.git",
+   "bugs": "https://github.com/reiss-d/uft/issues",
+   "author": "Reiss Davidson",
+   "scripts": {
+      "build": "FORCE_COLOR=1 pnpm turbo run build",
+      "test": "FORCE_COLOR=1 pnpm turbo run test --continue",
+      "dev": "FORCE_COLOR=1 pnpm turbo run dev",
+      "typedoc": "FORCE_COLOR=1 pnpm turbo run typedoc",
+      "release": "NODE_ENV=production FORCE_COLOR=1 pnpm turbo run release && pnpm changeset version && pnpm changeset publish"
+   },
+   "devDependencies": {
+      "@changesets/cli": "^2.26.2",
+      "@types/node": "^18.17.14",
+      "@types/shelljs": "^0.8.12",
+      "commitizen": "^4.3.0",
+      "concurrently": "^8.2.1",
+      "cz-conventional-changelog": "^3.3.0",
+      "eslint-config-uft": "workspace:*",
+      "execa": "^7.2.0",
+      "fast-glob": "^3.3.1",
+      "json": "^11.0.0",
+      "minimatch": "^9.0.3",
+      "shelljs": "^0.8.5",
+      "shx": "^0.3.4",
+      "turbo": "^1.10.13",
+      "typedoc": "^0.25.1",
+      "typedoc-plugin-mdn-links": "^3.1.0",
+      "typedoc-plugin-missing-exports": "^2.1.0",
+      "typescript": "^5.2.2"
+   },
+   "config": {
+      "commitizen": {
+         "path": "cz-conventional-changelog"
+      }
+   },
+   "packageManager": "pnpm@8.6.12",
+   "pnpm": {
+      "patchedDependencies": {
+         "@swc/cli@0.1.62": "patches/@swc__cli@0.1.62.patch"
+      }
+   },
+   "keywords": [
+      "functional",
+      "toolkit",
+      "types",
+      "typesafe",
+      "typescript",
+      "utilities",
+      "utils"
+   ]
+}

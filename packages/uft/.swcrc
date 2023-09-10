@@ -1,0 +1,39 @@
+{
+   "$schema": "https://json.schemastore.org/swcrc",
+   "exclude": [
+      "global\\.d\\.ts",
+      "\\.temp\\.",
+      "\/temp\/",
+      "\/[^\/]+-temp\/"
+   ],
+   "minify": true,
+   "module": {
+      "type": "commonjs"
+   },
+   "jsc": {
+      "parser": { "syntax": "typescript" },
+      "target": "es2020",
+      "externalHelpers": true,
+      "keepClassNames": true,
+      "transform": {
+         "optimizer": {
+            "globals": {
+               "vars": {
+                  "__DEV__": "undefined"
+               }
+            }
+         }
+      },
+      "minify": {
+         "compress": {
+            "inline": false
+         },
+         "mangle": {
+            "keepClassNames": true
+         },
+         "format": {
+            "comments": "some"
+         }
+      }
+   }
+}

@@ -1,0 +1,18 @@
+{
+   "extends": "tsconfig/base.json",
+   "compilerOptions": {
+      "lib": ["ES2020", "DOM", "DOM.Iterable"],
+      "outDir": "dist",
+      "emitDeclarationOnly": true,
+      "allowJs": true,
+      "checkJs": true,
+      "types": ["jest", "jest-chain", "jest-extended", "node"]
+   },
+   "include": [
+      "src",
+      "tsup.config.ts",
+      "transpile.mjs",
+      "post-build.mjs",
+      "shared.mjs"
+   ]
+}

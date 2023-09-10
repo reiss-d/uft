@@ -1,0 +1,33 @@
+{
+   "$schema": "https://json.schemastore.org/tsconfig",
+   "display": "Default",
+   "compilerOptions": {
+      "target": "ESNext",
+      "lib": ["ES2020"],
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "esModuleInterop": true,
+      "isolatedModules": true,
+      "resolveJsonModule": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+
+      "composite": false,
+      "declaration": true,
+      "declarationMap": true,
+      "inlineSources": false,
+      "skipLibCheck": true,
+      "skipDefaultLibCheck": true,
+      "noErrorTruncation": true,
+      "forceConsistentCasingInFileNames": true,
+
+      "strictNullChecks": true,
+      "noImplicitAny": false,
+      "noUnusedLocals": false,
+      "noUnusedParameters": false,
+      "noImplicitOverride": true,
+      "noUncheckedIndexedAccess": true,
+      "noFallthroughCasesInSwitch": true
+   },
+   "exclude": ["node_modules", "**/temp", "**/*-temp", "**/*.temp.*"]
+}

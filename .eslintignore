@@ -1,0 +1,9 @@
+/configs
+dist
+temp
+jest.setup.js
+*-temp
+*.temp.*
+*.config.js
+*.config.ts
+*.eslintrc.js
