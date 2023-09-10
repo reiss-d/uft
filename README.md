@@ -28,9 +28,7 @@ pnpm add uft
 
 For an optimal development experience, this library is fully documented with JSDoc comments, including usage examples. If you're using VSCode, simply hover over any method to see its documentation inline, within your editor.
 
-<!-- TODO: add docs link -->
-
-For those who prefer a web-based reference, a documentation site generated with [TypeDoc](https://github.com/TypeStrong/typedoc) is available [here](./README.md).
+For those who prefer a web-based reference, a documentation site generated with [TypeDoc](https://github.com/TypeStrong/typedoc) is available [here](https://reiss-d.github.io/uft/modules.html).
 
 ## Tree Shaking
 
@@ -57,64 +55,62 @@ import { isDefined } from 'uft/isDefined'
 - [Object](#object)
 - [Misc](#misc)
 
-<!-- TODO: add doc links for each method -->
-
 #### Array
 
-- [clearArray](src/array/clearArray)
-- [filteredForEach](src/array/filteredForEach)
-- [filteredMap](src/array/filteredMap)
-- [forMap](src/array/forMap)
-- [isEmpty](src/array/isEmpty)
-- [partition](src/array/partition)
-- [removeFirst](src/array/removeFirst)
-- [removeLast](src/array/removeLast)
-- [replaceArray](src/array/replaceArray)
-- [sortedInsert](src/array/sortedInsert)
-- [unique](src/array/unique)
+- [clearArray](https://reiss-d.github.io/uft/functions/clearArray)
+- [filteredForEach](https://reiss-d.github.io/uft/functions/filteredForEach)
+- [filteredMap](https://reiss-d.github.io/uft/functions/filteredMap)
+- [forMap](https://reiss-d.github.io/uft/functions/forMap)
+- [isEmpty](https://reiss-d.github.io/uft/functions/isEmpty)
+- [partition](https://reiss-d.github.io/uft/functions/partition)
+- [removeFirst](https://reiss-d.github.io/uft/functions/removeFirst)
+- [removeLast](https://reiss-d.github.io/uft/functions/removeLast)
+- [replaceArray](https://reiss-d.github.io/uft/functions/replaceArray)
+- [sortedInsert](https://reiss-d.github.io/uft/functions/sortedInsert)
+- [unique](https://reiss-d.github.io/uft/functions/unique)
 
 #### Coerce
 
-- [boolToString](src/coerce/boolToString)
-- [maybe](src/coerce/maybe)
-- [stringToBool](src/coerce/stringToBool)
-- [toArray](src/coerce/toArray)
+- [boolToString](https://reiss-d.github.io/uft/functions/boolToString)
+- [maybe](https://reiss-d.github.io/uft/functions/maybe)
+- [stringToBool](https://reiss-d.github.io/uft/functions/stringToBool)
+- [toArray](https://reiss-d.github.io/uft/functions/toArray)
 
 #### Is
 
-- [assert](src/is/assert)
-- [createAssert](src/is/createAssert)
-- [isDefined](src/is/isDefined)
-- [isUndefined](src/is/isDefined)
-- [isFunction](src/is/isFunction)
-- [isNull](src/is/isNull)
-- [isNotNull](src/is/isNull)
-- [isNullish](src/is/isNullish)
-- [isNotNullish](src/is/isNullish)
-- [isNumber](src/is/isNumber)
-- [isObject](src/is/isObject)
-- [isObjectLoose](src/is/isObjectLoose)
-- [isPlainArray](src/is/isPlainArray)
-- [isPlainObject](src/is/isPlainObject)
-- [isSafeInteger](src/is/isSafeInteger)
-- [isSafeNumber](src/is/isSafeNumber)
-- [isString](src/is/isString)
+- [assert](https://reiss-d.github.io/uft/functions/assert-1)
+- [createAssert](https://reiss-d.github.io/uft/functions/createAssert)
+- [isDefined](https://reiss-d.github.io/uft/functions/isDefined)
+- [isUndefined](https://reiss-d.github.io/uft/functions/isUndefined)
+- [isFunction](https://reiss-d.github.io/uft/functions/isFunction)
+- [isNull](https://reiss-d.github.io/uft/functions/isNull)
+- [isNotNull](https://reiss-d.github.io/uft/functions/isNotNull)
+- [isNullish](https://reiss-d.github.io/uft/functions/isNullish)
+- [isNotNullish](https://reiss-d.github.io/uft/functions/isNotNullish)
+- [isNumber](https://reiss-d.github.io/uft/functions/isNumber)
+- [isObject](https://reiss-d.github.io/uft/functions/isObject)
+- [isObjectLoose](https://reiss-d.github.io/uft/functions/isObjectLoose)
+- [isPlainArray](https://reiss-d.github.io/uft/functions/isPlainArray)
+- [isPlainObject](https://reiss-d.github.io/uft/functions/isPlainObject)
+- [isSafeInteger](https://reiss-d.github.io/uft/functions/isSafeInteger)
+- [isSafeNumber](https://reiss-d.github.io/uft/functions/isSafeNumber)
+- [isString](https://reiss-d.github.io/uft/functions/isString)
 
 #### Object
 
-- [forEachKey](src/object/forEachKey)
-- [hasKeys](src/object/hasKeys)
-- [mapKeys](src/object/mapKeys)
-- [typedKeys](src/object/typedKeys)
+- [forEachKey](https://reiss-d.github.io/uft/functions/forEachKey)
+- [hasKeys](https://reiss-d.github.io/uft/functions/hasKeys)
+- [mapKeys](https://reiss-d.github.io/uft/functions/mapKeys)
+- [typedKeys](https://reiss-d.github.io/uft/functions/typedKeys)
 
 #### Misc
 
-- [allSettled](src/misc/allSettled)
-- [isFulfilled](src/misc/allSettled)
-- [createEq](src/misc/createEq)
-- [retry](src/misc/retry)
-- [isRetryOK](src/misc/retry)
-- [timeout](src/misc/timeout)
+- [allSettled](https://reiss-d.github.io/uft/functions/allSettled)
+- [isFulfilled](https://reiss-d.github.io/uft/functions/isFulfilled)
+- [createEq](https://reiss-d.github.io/uft/functions/createEq)
+- [retry](https://reiss-d.github.io/uft/functions/retry)
+- [isRetryOK](https://reiss-d.github.io/uft/functions/isRetryOK)
+- [timeout](https://reiss-d.github.io/uft/functions/timeout)
 
 ## License
 

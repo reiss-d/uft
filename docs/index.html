@@ -30,9 +30,7 @@
 <a id="md:installation" class="tsd-anchor"></a><h2><a href="#md:installation">Installation</a></h2><pre><code class="language-bash"><span class="hl-4"># using npm</span><br/><span class="hl-5">npm</span><span class="hl-1"> </span><span class="hl-3">install</span><span class="hl-1"> </span><span class="hl-3">uft</span><br/><span class="hl-4"># using pnpm</span><br/><span class="hl-5">pnpm</span><span class="hl-1"> </span><span class="hl-3">add</span><span class="hl-1"> </span><span class="hl-3">uft</span>
 </code><button>Copy</button></pre>
 <a id="md:documentation" class="tsd-anchor"></a><h2><a href="#md:documentation">Documentation</a></h2><p>For an optimal development experience, this library is fully documented with JSDoc comments, including usage examples. If you&#39;re using VSCode, simply hover over any method to see its documentation inline, within your editor.</p>
-<!-- TODO: add docs link -->
-
-<p>For those who prefer a web-based reference, a documentation site generated with <a href="https://github.com/TypeStrong/typedoc">TypeDoc</a> is available <a href="./README.md">here</a>.</p>
+<p>For those who prefer a web-based reference, a documentation site generated with <a href="https://github.com/TypeStrong/typedoc">TypeDoc</a> is available <a href="https://reiss-d.github.io/uft/modules.html">here</a>.</p>
 <a id="md:tree-shaking" class="tsd-anchor"></a><h2><a href="#md:tree-shaking">Tree Shaking</a></h2><p>If you are using this library in a project that has a build step featuring tree shaking (e.g. webpack, rollup, etc.), you can freely import methods from the default entry point:</p>
 <pre><code class="language-ts"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">filteredMap</span><span class="hl-1">, </span><span class="hl-2">isDefined</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;uft&#39;</span>
 </code><button>Copy</button></pre>
@@ -46,59 +44,57 @@
 <li><a href="#object">Object</a></li>
 <li><a href="#misc">Misc</a></li>
 </ul>
-<!-- TODO: add doc links for each method -->
-
 <a id="md:array" class="tsd-anchor"></a><h4><a href="#md:array">Array</a></h4><ul>
-<li><a href="src/array/clearArray">clearArray</a></li>
-<li><a href="src/array/filteredForEach">filteredForEach</a></li>
-<li><a href="src/array/filteredMap">filteredMap</a></li>
-<li><a href="src/array/forMap">forMap</a></li>
-<li><a href="src/array/isEmpty">isEmpty</a></li>
-<li><a href="src/array/partition">partition</a></li>
-<li><a href="src/array/removeFirst">removeFirst</a></li>
-<li><a href="src/array/removeLast">removeLast</a></li>
-<li><a href="src/array/replaceArray">replaceArray</a></li>
-<li><a href="src/array/sortedInsert">sortedInsert</a></li>
-<li><a href="src/array/unique">unique</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/clearArray">clearArray</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/filteredForEach">filteredForEach</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/filteredMap">filteredMap</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/forMap">forMap</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isEmpty">isEmpty</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/partition">partition</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/removeFirst">removeFirst</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/removeLast">removeLast</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/replaceArray">replaceArray</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/sortedInsert">sortedInsert</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/unique">unique</a></li>
 </ul>
 <a id="md:coerce" class="tsd-anchor"></a><h4><a href="#md:coerce">Coerce</a></h4><ul>
-<li><a href="src/coerce/boolToString">boolToString</a></li>
-<li><a href="src/coerce/maybe">maybe</a></li>
-<li><a href="src/coerce/stringToBool">stringToBool</a></li>
-<li><a href="src/coerce/toArray">toArray</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/boolToString">boolToString</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/maybe">maybe</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/stringToBool">stringToBool</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/toArray">toArray</a></li>
 </ul>
 <a id="md:is" class="tsd-anchor"></a><h4><a href="#md:is">Is</a></h4><ul>
-<li><a href="src/is/assert">assert</a></li>
-<li><a href="src/is/createAssert">createAssert</a></li>
-<li><a href="src/is/isDefined">isDefined</a></li>
-<li><a href="src/is/isDefined">isUndefined</a></li>
-<li><a href="src/is/isFunction">isFunction</a></li>
-<li><a href="src/is/isNull">isNull</a></li>
-<li><a href="src/is/isNull">isNotNull</a></li>
-<li><a href="src/is/isNullish">isNullish</a></li>
-<li><a href="src/is/isNullish">isNotNullish</a></li>
-<li><a href="src/is/isNumber">isNumber</a></li>
-<li><a href="src/is/isObject">isObject</a></li>
-<li><a href="src/is/isObjectLoose">isObjectLoose</a></li>
-<li><a href="src/is/isPlainArray">isPlainArray</a></li>
-<li><a href="src/is/isPlainObject">isPlainObject</a></li>
-<li><a href="src/is/isSafeInteger">isSafeInteger</a></li>
-<li><a href="src/is/isSafeNumber">isSafeNumber</a></li>
-<li><a href="src/is/isString">isString</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/assert-1">assert</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/createAssert">createAssert</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isDefined">isDefined</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isUndefined">isUndefined</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isFunction">isFunction</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isNull">isNull</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isNotNull">isNotNull</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isNullish">isNullish</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isNotNullish">isNotNullish</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isNumber">isNumber</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isObject">isObject</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isObjectLoose">isObjectLoose</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isPlainArray">isPlainArray</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isPlainObject">isPlainObject</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isSafeInteger">isSafeInteger</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isSafeNumber">isSafeNumber</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isString">isString</a></li>
 </ul>
 <a id="md:object" class="tsd-anchor"></a><h4><a href="#md:object">Object</a></h4><ul>
-<li><a href="src/object/forEachKey">forEachKey</a></li>
-<li><a href="src/object/hasKeys">hasKeys</a></li>
-<li><a href="src/object/mapKeys">mapKeys</a></li>
-<li><a href="src/object/typedKeys">typedKeys</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/forEachKey">forEachKey</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/hasKeys">hasKeys</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/mapKeys">mapKeys</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/typedKeys">typedKeys</a></li>
 </ul>
 <a id="md:misc" class="tsd-anchor"></a><h4><a href="#md:misc">Misc</a></h4><ul>
-<li><a href="src/misc/allSettled">allSettled</a></li>
-<li><a href="src/misc/allSettled">isFulfilled</a></li>
-<li><a href="src/misc/createEq">createEq</a></li>
-<li><a href="src/misc/retry">retry</a></li>
-<li><a href="src/misc/retry">isRetryOK</a></li>
-<li><a href="src/misc/timeout">timeout</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/allSettled">allSettled</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isFulfilled">isFulfilled</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/createEq">createEq</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/retry">retry</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/isRetryOK">isRetryOK</a></li>
+<li><a href="https://reiss-d.github.io/uft/functions/timeout">timeout</a></li>
 </ul>
 <a id="md:license" class="tsd-anchor"></a><h2><a href="#md:license">License</a></h2><p>See <a href="./LICENSE">license</a>.</p>
 </div></div>
