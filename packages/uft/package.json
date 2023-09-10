@@ -42,10 +42,12 @@
             "cjs/index.d.ts"
          ],
          "esm/*": [
-            "esm/*.d.mts"
+            "esm/*.d.mts",
+            "esm/*"
          ],
          "cjs/*": [
-            "cjs/*.d.ts"
+            "cjs/*.d.ts",
+            "cjs/*"
          ],
          "*": [
             "esm/*",
