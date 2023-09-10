@@ -13,6 +13,7 @@ A collection of performant, strongly typed utilities to aid your Typescript appl
   - [Is](#is)
   - [Object](#object)
   - [Misc](#misc)
+- [Changelog](#changelog)
 - [License](#license)
 
 ## Installation
@@ -111,6 +112,10 @@ import { isDefined } from 'uft/isDefined'
 - [retry](https://reiss-d.github.io/uft/functions/retry)
 - [isRetryOK](https://reiss-d.github.io/uft/functions/isRetryOK)
 - [timeout](https://reiss-d.github.io/uft/functions/timeout)
+
+## Changelog
+
+View the changes made to each version of `uft` [here](./packages/uft/CHANGELOG.md).
 
 ## License
 
