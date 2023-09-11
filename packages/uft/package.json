@@ -37,10 +37,6 @@
    },
    "typesVersions": {
       "*": {
-         "index*": [
-            "esm/index.d.mts",
-            "cjs/index.d.ts"
-         ],
          "esm/*": [
             "esm/*.d.mts",
             "esm/*"
