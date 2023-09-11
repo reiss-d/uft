@@ -1,5 +1,12 @@
 # uft
 
+## 0.1.3
+
+### Patch Changes
+
+- fix: intellisense auto imports
+- perf: added pure comments to builtins
+
 ## 0.1.2
 
 ### Patch Changes
