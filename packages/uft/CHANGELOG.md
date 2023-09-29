@@ -1,5 +1,11 @@
 # uft
 
+## 0.1.4
+
+### Patch Changes
+
+- fix: `isPlainArray` not re-exported in main
+
 ## 0.1.3
 
 ### Patch Changes
