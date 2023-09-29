@@ -31,6 +31,7 @@ export { isNumber, isSafeInteger, isSafeNumber } from './is/isNumber'
 export type { SafeInteger, SafeNumber } from './is/isNumber'
 export { isObject } from './is/isObject'
 export { isObjectLoose } from './is/isObjectLoose'
+export { isPlainArray } from './is/isPlainArray'
 export { isPlainObject } from './is/isPlainObject'
 export { isString } from './is/isString'
 
