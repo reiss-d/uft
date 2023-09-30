@@ -1,5 +1,11 @@
 # uft
 
+## 0.1.5
+
+### Patch Changes
+
+- fix: improper binding of `hasOwn`
+
 ## 0.1.4
 
 ### Patch Changes
