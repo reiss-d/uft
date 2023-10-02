@@ -4,6 +4,8 @@ export type AnyArray<T = any> = T[] | readonly T[]
 
 export type EmptyArray = [] | readonly []
 
+export type EmptyObject = Record<PropertyKey, never>
+
 /* Is */
 
 export type Is<TType, TIs> = TType extends TIs ? TIs : never
@@ -64,6 +66,9 @@ export type inferReversePredicate<TGuard extends Guard> = inferPredicate<
 >
 
 /* infer */
+
+/** @internal */
+export type NoInfer<T> = [T][T extends any ? 0 : never]
 
 // /** @internal */
 // export type Expand<T> = T extends infer U ? U : never
