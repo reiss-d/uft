@@ -1,4 +1,8 @@
-import type { ToMutableArray, inferReversePredicate } from '../../types'
+import type {
+   AssignableTo,
+   ToMutableArray,
+   inferReversePredicate,
+} from '../../types'
 
 /**
  * Creates two arrays, the first containing the elements for which
@@ -33,6 +37,9 @@ import type { ToMutableArray, inferReversePredicate } from '../../types'
  * ```
  * @category Array
  */
+
+// Requires that the type predicate of `predicate` extends
+// one of the elements of the array.
 export function partition<
    T extends readonly unknown[],
    S extends T[number],
@@ -44,10 +51,31 @@ export function partition<
    falseElements: inferReversePredicate<typeof predicate>[],
 ]
 
+// Requires that an element of the array extends the
+// type predicate of `predicate`. See `filteredForEach`
+// for more information.
+export function partition<
+   T extends readonly unknown[],
+   S,
+>(
+   array: T,
+   predicate: (element: T[number], index: number) => element is S
+): [
+   trueElements: AssignableTo<T[number], S>[],
+   falseElements: AssignableTo<
+      T[number],
+      inferReversePredicate<typeof predicate>
+   >[],
+]
+
+// Does not require the use of a type predicate.
 export function partition<T extends readonly unknown[]>(
    array: T,
    predicate: (element: T[number], index: number) => boolean
-): [trueElements: ToMutableArray<T>, falseElements: ToMutableArray<T>]
+): [
+   trueElements: ToMutableArray<T>,
+   falseElements: ToMutableArray<T>,
+]
 
 export function partition(
    array: unknown[],

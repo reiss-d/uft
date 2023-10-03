@@ -19,6 +19,20 @@ export type ToMutableArray<T> = T extends AnyArray ? inferArrayType<T>[]
    : never
 
 /**
+ * Distributes over `T` and returns those that extend `U`.
+ *
+ * @example
+ * ```ts
+ * // 'b' | 'c'
+ * type A = AssignableTo<1 | 'b' | 'c', string>
+ * // never
+ * type B = AssignableTo<{ a: string }, string[]>
+ * ```
+ * @internal
+ */
+export type AssignableTo<T, U> = T extends U ? T : never
+
+/**
  * Use of brackets is important here to avoid distributing `T`
  * into separate arrays, for example:
  *

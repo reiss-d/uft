@@ -1,3 +1,5 @@
+import type { AssignableTo } from '../../types'
+
 /**
  * Applies a `filter` function to the elements of the given array, and then
  * creates a new array using the return values from calling a `map` function
@@ -35,6 +37,9 @@
  * ```
  * @category Array
  */
+
+// Requires that the type predicate of `filter` extends
+// one of the elements of the array.
 export function filteredMap<
    T extends readonly unknown[],
    S extends T[number],
@@ -45,6 +50,20 @@ export function filteredMap<
    map: (element: S, index: number) => R
 ): R[]
 
+// Requires that an element of the array extends the
+// type predicate of `filter`. See `filteredForEach`
+// for more information.
+export function filteredMap<
+   T extends readonly unknown[],
+   S,
+   R,
+>(
+   array: T,
+   filter: (element: T[number], index: number) => element is S,
+   map: (element: AssignableTo<T[number], S>, index: number) => R
+): R[]
+
+// Does not require the use of a type predicate.
 export function filteredMap<
    T extends readonly unknown[],
    R,

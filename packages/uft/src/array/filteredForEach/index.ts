@@ -1,3 +1,5 @@
+import type { AssignableTo } from '../../types'
+
 /**
  * Applies a `filter` function to the elements of the given array, and then
  * calls a `forEach` function with each of the filtered elements.
@@ -31,6 +33,9 @@
  * ```
  * @category Array
  */
+
+// Requires that the type predicate of `filter` extends
+// one of the elements of the array.
 export function filteredForEach<
    T extends readonly unknown[],
    S extends T[number],
@@ -40,6 +45,34 @@ export function filteredForEach<
    forEach: (element: S, index: number) => void
 ): void
 
+// Requires that an element of the array extends the
+// type predicate of `filter`.
+// This allows using a type guard that accepts an unknown
+// value (a common use case) and returns a looser predicate
+// which can be intersected with the element type.
+// For example:
+// ```ts
+// const isObject = (value: unknown): value is object => {
+//    return typeof value === 'object' && value !== null
+// }
+// filteredForEach(
+//    [{ a: 1 }, { a: "hi" }, 99],
+//    isObject,
+//    (value) => {
+//       value // type: { a: number} | { a: string }
+//    }
+// )
+// ```
+export function filteredForEach<
+   T extends readonly unknown[],
+   S,
+>(
+   array: T,
+   filter: (element: T[number], index: number) => element is S,
+   forEach: (element: AssignableTo<T[number], S>, index: number) => void
+): void
+
+// Does not require the use of a type predicate.
 export function filteredForEach<
    T extends readonly unknown[],
 >(
