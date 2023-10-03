@@ -1,5 +1,12 @@
 # uft
 
+## 0.2.0
+
+### Minor Changes
+
+- feat: improved type predicates in several methods
+  BREAKING CHANGE: In rare cases the type returned by the methods `filteredForEach`, `filteredMap` and `partition` will have changed.
+
 ## 0.1.6
 
 ### Patch Changes
