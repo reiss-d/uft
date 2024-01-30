@@ -1,5 +1,11 @@
 # uft
 
+## 0.2.2
+
+### Patch Changes
+
+- deps: updated `@swc/helpers` to `v0.5.3`
+
 ## 0.2.1
 
 ### Patch Changes
