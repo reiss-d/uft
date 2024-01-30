@@ -17,24 +17,24 @@
       "release": "NODE_ENV=production FORCE_COLOR=1 pnpm turbo run release && pnpm changeset publish"
    },
    "devDependencies": {
-      "@changesets/cli": "^2.26.2",
-      "@types/node": "^18.17.14",
-      "@types/shelljs": "^0.8.12",
+      "@changesets/cli": "^2.27.1",
+      "@types/node": "^18.19.10",
+      "@types/shelljs": "^0.8.15",
       "commitizen": "^4.3.0",
-      "concurrently": "^8.2.1",
+      "concurrently": "^8.2.2",
       "cz-conventional-changelog": "^3.3.0",
       "eslint-config-uft": "workspace:*",
       "execa": "^7.2.0",
-      "fast-glob": "^3.3.1",
+      "fast-glob": "^3.3.2",
       "json": "^11.0.0",
       "minimatch": "^9.0.3",
       "shelljs": "^0.8.5",
       "shx": "^0.3.4",
-      "turbo": "^1.10.13",
-      "typedoc": "^0.25.1",
-      "typedoc-plugin-mdn-links": "^3.1.0",
-      "typedoc-plugin-missing-exports": "^2.1.0",
-      "typescript": "^5.2.2"
+      "turbo": "^1.11.3",
+      "typedoc": "^0.25.7",
+      "typedoc-plugin-mdn-links": "^3.1.14",
+      "typedoc-plugin-missing-exports": "^2.2.0",
+      "typescript": "^5.3.3"
    },
    "config": {
       "commitizen": {
