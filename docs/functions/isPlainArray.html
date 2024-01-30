@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>timeout | uft</title><meta name="description" content="Documentation for uft"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>isPlainArray | uft</title><meta name="description" content="Documentation for uft"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,46 +13,37 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">uft</a></li>
-<li><a href="timeout.html">timeout</a></li></ul>
-<h1>Function timeout</h1></div>
+<li><a href="isPlainArray.html">isPlainArray</a></li></ul>
+<h1>Function isPlainArray</h1></div>
 <section class="tsd-panel">
 <ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="timeout"><span class="tsd-kind-call-signature">timeout</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">R</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">ms</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, <span class="tsd-kind-parameter">cb</span><span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type tsd-kind-type-parameter">R</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="tsd-signature-type external" target="_blank">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">R</span><span class="tsd-signature-symbol">&gt;</span><a href="#timeout" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="isPlainArray"><span class="tsd-kind-call-signature">is<wbr/>Plain<wbr/>Array</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">[]</span><a href="#isPlainArray" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Stop execution for a specified amount of time.</p>
+<div class="tsd-comment tsd-typography"><p>Checks if a value passes <code>Array.isArray</code> and has prototype <code>Array.prototype</code>.</p>
 </div>
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">R</span> = <span class="tsd-signature-type">void</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">ms</span>: <span class="tsd-signature-type">number</span></h5>
-<div class="tsd-comment tsd-typography"><p>The time in milliseconds to wait before resolving the Promise.</p>
+<h5><span class="tsd-kind-parameter">value</span>: <span class="tsd-signature-type">unknown</span></h5>
+<div class="tsd-comment tsd-typography"><p>The value to check.</p>
 </div>
-<div class="tsd-comment tsd-typography"></div></li>
-<li>
-<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">cb</span>: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type tsd-kind-type-parameter">R</span><span class="tsd-signature-symbol">)</span></h5>
-<div class="tsd-comment tsd-typography"><p>An optional callback function to execute before resolving the Promise.</p>
-</div>
-<div class="tsd-comment tsd-typography"></div>
-<ul class="tsd-parameters">
-<li class="tsd-parameter-signature">
-<ul class="tsd-signatures">
-<li class="tsd-signature"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type tsd-kind-type-parameter">R</span></li>
-<li class="tsd-description">
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type tsd-kind-type-parameter">R</span></h4></li></ul></li></ul></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" class="tsd-signature-type external" target="_blank">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">R</span><span class="tsd-signature-symbol">&gt;</span></h4><p>A Promise that resolves after the specified time has elapsed.</p>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-kind-parameter">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">[]</span></h4><p><code>true</code> if the check passes, <code>false</code> otherwise.</p>
 
 <div class="tsd-comment tsd-typography">
-<h4>Example</h4><a id="md:basic-usage" class="tsd-anchor"></a><h4><a href="#md:basic-usage">Basic usage</a></h4><pre><code class="language-ts"><span class="hl-4">// using async/await</span><br/><span class="hl-6">async</span><span class="hl-1"> </span><span class="hl-6">function</span><span class="hl-1"> </span><span class="hl-5">main</span><span class="hl-1">() {</span><br/><span class="hl-1">  </span><span class="hl-2">console</span><span class="hl-1">.</span><span class="hl-5">log</span><span class="hl-1">(</span><span class="hl-3">&#39;Before timeout.&#39;</span><span class="hl-1">)</span><br/><span class="hl-1">  </span><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-5">timeout</span><span class="hl-1">(</span><span class="hl-12">1000</span><span class="hl-1">, () </span><span class="hl-6">=&gt;</span><span class="hl-1"> </span><span class="hl-2">console</span><span class="hl-1">.</span><span class="hl-5">log</span><span class="hl-1">(</span><span class="hl-3">&#39;A second has passed!&#39;</span><span class="hl-1">))</span><br/><span class="hl-1">  </span><span class="hl-2">console</span><span class="hl-1">.</span><span class="hl-5">log</span><span class="hl-1">(</span><span class="hl-3">&#39;After timeout.&#39;</span><span class="hl-1">)</span><br/><span class="hl-1">}</span><br/><span class="hl-5">main</span><span class="hl-1">()</span><br/><span class="hl-4">// Before timeout.</span><br/><span class="hl-4">// A second has passed!</span><br/><span class="hl-4">// After timeout.</span><br/><br/><span class="hl-4">// using Promise.then()</span><br/><span class="hl-2">console</span><span class="hl-1">.</span><span class="hl-5">log</span><span class="hl-1">(</span><span class="hl-3">&#39;Before timeout.&#39;</span><span class="hl-1">)</span><br/><span class="hl-5">timeout</span><span class="hl-1">(</span><br/><span class="hl-1">  </span><span class="hl-12">1000</span><span class="hl-1">,</span><br/><span class="hl-1">  () </span><span class="hl-6">=&gt;</span><span class="hl-1"> </span><span class="hl-2">console</span><span class="hl-1">.</span><span class="hl-5">log</span><span class="hl-1">(</span><span class="hl-3">&#39;A second has passed!&#39;</span><span class="hl-1">)</span><br/><span class="hl-1">).</span><span class="hl-5">then</span><span class="hl-1">(</span><br/><span class="hl-1">  () </span><span class="hl-6">=&gt;</span><span class="hl-1"> </span><span class="hl-2">console</span><span class="hl-1">.</span><span class="hl-5">log</span><span class="hl-1">(</span><span class="hl-3">&#39;Then...&#39;</span><span class="hl-1">)</span><br/><span class="hl-1">)</span><br/><span class="hl-2">console</span><span class="hl-1">.</span><span class="hl-5">log</span><span class="hl-1">(</span><span class="hl-3">&#39;After timeout.&#39;</span><span class="hl-1">)</span><br/><span class="hl-4">// Before timeout.</span><br/><span class="hl-4">// After timeout.</span><br/><span class="hl-4">// A second has passed!</span><br/><span class="hl-4">// Then...</span>
+<h4>Remarks</h4><p>This is useful for checking that the prototype of an array has not been
+modified. However, this will return <code>false</code> for arrays created in other
+realms since they will have a different prototype.</p>
+
+<h4>Example</h4><a id="md:basic-usage" class="tsd-anchor"></a><h4><a href="#md:basic-usage">Basic usage</a></h4><pre><code class="language-ts"><span class="hl-5">isPlainArray</span><span class="hl-1">([]) </span><span class="hl-4">// true</span><br/><span class="hl-5">isPlainArray</span><span class="hl-1">(</span><span class="hl-6">new</span><span class="hl-1"> </span><span class="hl-5">Array</span><span class="hl-1">()) </span><span class="hl-4">// true</span><br/><br/><span class="hl-5">isPlainArray</span><span class="hl-1">(</span><span class="hl-6">new</span><span class="hl-1"> </span><span class="hl-5">Uint16Array</span><span class="hl-1">()) </span><span class="hl-4">// false</span><br/><span class="hl-5">isPlainArray</span><span class="hl-1">(</span><span class="hl-2">Object</span><span class="hl-1">.</span><span class="hl-5">create</span><span class="hl-1">(</span><span class="hl-11">Array</span><span class="hl-1">.</span><span class="hl-15">prototype</span><span class="hl-1">)) </span><span class="hl-4">// false</span><br/><span class="hl-5">isPlainArray</span><span class="hl-1">(</span><span class="hl-2">Object</span><span class="hl-1">.</span><span class="hl-5">create</span><span class="hl-1">(</span><span class="hl-13">null</span><span class="hl-1">)) </span><span class="hl-4">// false</span><br/><span class="hl-5">isPlainArray</span><span class="hl-1">(</span><span class="hl-13">null</span><span class="hl-1">) </span><span class="hl-4">// false</span>
+</code><button>Copy</button></pre>
+<p>Comparison with <code>Array.isArray</code>:</p>
+<pre><code class="language-ts"><span class="hl-6">class</span><span class="hl-1"> </span><span class="hl-9">MyArray</span><span class="hl-1"> </span><span class="hl-6">extends</span><span class="hl-1"> </span><span class="hl-9">Array</span><span class="hl-1"> {}</span><br/><span class="hl-2">Array</span><span class="hl-1">.</span><span class="hl-5">isArray</span><span class="hl-1">(</span><span class="hl-6">new</span><span class="hl-1"> </span><span class="hl-5">MyArray</span><span class="hl-1">()) </span><span class="hl-4">// true</span><br/><span class="hl-5">isPlainArray</span><span class="hl-1">(</span><span class="hl-6">new</span><span class="hl-1"> </span><span class="hl-5">MyArray</span><span class="hl-1">()) </span><span class="hl-4">// false</span>
 </code><button>Copy</button></pre>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/reiss-d/uft/blob/982b605/packages/uft/src/misc/timeout/index.ts#L38">misc/timeout/index.ts:38</a></li></ul></aside></li></ul></section></div>
+<li>Defined in <a href="https://github.com/reiss-d/uft/blob/982b605/packages/uft/src/is/isPlainArray/index.ts#L34">is/isPlainArray/index.ts:34</a></li></ul></aside></li></ul></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
