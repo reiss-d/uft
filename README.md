@@ -58,11 +58,13 @@ import { isDefined } from 'uft/isDefined'
 
 #### Array
 
+- [at](https://reiss-d.github.io/uft/functions/at)
 - [clearArray](https://reiss-d.github.io/uft/functions/clearArray)
 - [filteredForEach](https://reiss-d.github.io/uft/functions/filteredForEach)
 - [filteredMap](https://reiss-d.github.io/uft/functions/filteredMap)
 - [forMap](https://reiss-d.github.io/uft/functions/forMap)
 - [isEmpty](https://reiss-d.github.io/uft/functions/isEmpty)
+- [isNotEmpty](https://reiss-d.github.io/uft/functions/isNotEmpty)
 - [partition](https://reiss-d.github.io/uft/functions/partition)
 - [removeFirst](https://reiss-d.github.io/uft/functions/removeFirst)
 - [removeLast](https://reiss-d.github.io/uft/functions/removeLast)

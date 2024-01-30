@@ -36,11 +36,12 @@ export { isPlainObject } from './is/isPlainObject'
 export { isString } from './is/isString'
 
 // Array
+export { at } from './array/at'
 export { clearArray } from './array/clearArray'
 export { filteredForEach } from './array/filteredForEach'
 export { filteredMap } from './array/filteredMap'
 export { forMap } from './array/forMap'
-export { isEmpty } from './array/isEmpty'
+export { isEmpty, isNotEmpty } from './array/isEmpty'
 export { partition } from './array/partition'
 export { removeFirst } from './array/removeFirst'
 export { removeLast } from './array/removeLast'
