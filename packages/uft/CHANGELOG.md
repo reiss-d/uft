@@ -1,5 +1,11 @@
 # uft
 
+## 0.2.1
+
+### Patch Changes
+
+- feat: new methods `at` & `isNotEmpty`
+
 ## 0.2.0
 
 ### Minor Changes
