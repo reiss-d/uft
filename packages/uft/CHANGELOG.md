@@ -1,5 +1,11 @@
 # uft
 
+## 0.3.0
+
+### Minor Changes
+
+- feat: option to return index from `removeFirst` & `removeLast`
+
 ## 0.2.2
 
 ### Patch Changes
