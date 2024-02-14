@@ -6,6 +6,7 @@
       "emitDeclarationOnly": true,
       "allowJs": true,
       "checkJs": true,
+      "inlineSourceMap": true,
       "types": ["jest", "jest-chain", "jest-extended", "node"]
    },
    "include": [

@@ -1,6 +1,8 @@
 {
    "extends": "./tsconfig.json",
-   "compilerOptions": {},
+   "compilerOptions": {
+      "inlineSourceMap": false
+   },
    "include": ["src"],
    "exclude": [
       "src/test.utils.ts",

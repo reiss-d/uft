@@ -7,8 +7,16 @@ const config = {
    testMatch: ['**/src/**/*.spec.ts'],
    transform: {
       '^.+\\.tsx?$': ['@swc/jest', {
+         swcrc: false,
+         sourceMaps: 'inline',
+         module: {
+            type: 'commonjs',
+         },
          jsc: {
-            externalHelpers: false,
+            parser: { 'syntax': 'typescript' },
+            target: 'es2020',
+            externalHelpers: true,
+            keepClassNames: true,
             transform: {
                optimizer: {
                   globals: {
