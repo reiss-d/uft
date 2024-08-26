@@ -24,6 +24,7 @@
 export { assert } from './is/assert'
 export { type Assert, createAssert } from './is/createAssert'
 export { isDefined, isUndefined } from './is/isDefined'
+export { isError } from './is/isError'
 export { isFunction } from './is/isFunction'
 export { isNotNull, isNull } from './is/isNull'
 export { isNotNullish, isNullish } from './is/isNullish'
@@ -70,5 +71,6 @@ export type {
    SettledResult,
 } from './misc/allSettled'
 export { createEq } from './misc/createEq'
+export { noop } from './misc/noop'
 export { isRetryOK, retry, type RetryResult } from './misc/retry'
 export { timeout } from './misc/timeout'

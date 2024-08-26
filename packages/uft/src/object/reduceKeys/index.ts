@@ -17,7 +17,7 @@ import type { EmptyObject, NoInfer } from '../../types'
  * @example
  * #### Basic Usage
  * ```ts
- * // An empty object as the inital value:
+ * // An empty object as the initial value:
  * const objectAccum = reduceKeys(
  *    { a: 'hello', b: 'world' },
  *    {},
@@ -29,7 +29,7 @@ import type { EmptyObject, NoInfer } from '../../types'
  * )
  * console.log(objectAccum) // { a: 'HELLO', b: 'WORLD' }
  *
- * // The inital value does not need to be an object.
+ * // The initial value does not need to be an object.
  * // It can be any kind, for example a number:
  * const numberAccum = reduceKeys(
  *    { a: 1, b: 2, c: 3 },
@@ -46,9 +46,9 @@ import type { EmptyObject, NoInfer } from '../../types'
  * ```ts
  * // A custom return type can be specified in two ways.
  * // The second method will only work with an object type
- * // where the inital value is an empty object ({}).
+ * // where the initial value is an empty object ({}).
  *
- * // 1. Specify a custom type using `as` on the inital value:
+ * // 1. Specify a custom type using `as` on the initial value:
  * const strToNumAccum = reduceKeys(
  *    { a: '1', b: '2' },
  *    {} as { a: number; b: number },
@@ -63,7 +63,7 @@ import type { EmptyObject, NoInfer } from '../../types'
  * )
  * console.log(strToNumAccum) // { a: 10, b: 20 }
  *
- * // 2. If the inital value is an empty object as shown above,
+ * // 2. If the initial value is an empty object as shown above,
  * // you can omit it and specify the return type by overriding
  * // `previousValue` (accum) in the callback:
  * const strToNumAccum = reduceKeys(

@@ -95,8 +95,8 @@ export function assert<
 export function assert() {
    // NOTE:
    // The choice of using the `arguments` object here is intentional.
-   // Since it is likely that the `assert` will return early, we want to
-   // avoid creating a new array for the `args` parameter everytime the
+   // Since it's likely that the `assert` will return early, we want to
+   // avoid creating a new array for the `args` parameter every time the
    // function is called.
 
    const condition = arguments[0] as boolean

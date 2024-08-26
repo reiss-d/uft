@@ -91,7 +91,7 @@ export type NoInfer<T> = [T][T extends any ? 0 : never]
 export type inferArrayType<T> = T extends readonly (infer U)[] ? U : never
 
 /**
- * Simplifys a named array type down to its simplified form for a better
+ * Simplifies a named array type down to its simplified form for a better
  * developer experience when using intellisense.
  * @internal
  */

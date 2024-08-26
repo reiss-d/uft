@@ -9,7 +9,7 @@ class Counter {
 }
 
 describe('object/reduceKeys', () => {
-   test('works with object `initalValue`', () => {
+   test('works with object `initialValue`', () => {
       const result = reduceKeys(
          { a: 'hello', b: 'world' },
          {},
@@ -24,7 +24,7 @@ describe('object/reduceKeys', () => {
       expect(result).toEqual({ a: 'HELLO', b: 'WORLD' })
    })
 
-   test('works with non-object `initalValue`', () => {
+   test('works with non-object `initialValue`', () => {
       const numberAccum = reduceKeys(
          { a: 1, b: 2, c: 3 },
          0,
@@ -67,7 +67,7 @@ describe('object/reduceKeys', () => {
       expect(arrayAccum).toEqual([1, 2, 3])
    })
 
-   test('works for `initalValue` with different type from `obj`', () => {
+   test('works for `initialValue` with different type from `obj`', () => {
       const strToNumAccum = reduceKeys(
          { a: '1', b: '2' },
          {} as { a: number; b: number },
@@ -84,7 +84,7 @@ describe('object/reduceKeys', () => {
       expectTypeOf(strToNumAccum).toEqualTypeOf<{ a: number; b: number }>()
    })
 
-   test('return type is inferred when no `initalValue` is provided and the `previousValue` type is overriden', () => {
+   test('return type is inferred when no `initialValue` is provided and the `previousValue` type is overridden', () => {
       const strToNumAccum = reduceKeys(
          { a: '1', b: '2' },
          (accum: { a: number; b: number }, key, _idx, obj) => {
