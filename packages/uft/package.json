@@ -1,6 +1,6 @@
 {
    "name": "uft",
-   "version": "0.3.0",
+   "version": "0.3.1",
    "license": "MIT",
    "description": "A collection of performant, strongly typed utilities to aid your Typescript application.",
    "homepage": "https://github.com/reiss-d/uft#readme",

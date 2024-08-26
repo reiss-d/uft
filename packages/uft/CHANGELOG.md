@@ -1,5 +1,11 @@
 # uft
 
+## 0.3.1
+
+### Patch Changes
+
+- feat: new methods `noop` and `isError`
+
 ## 0.3.0
 
 ### Minor Changes
