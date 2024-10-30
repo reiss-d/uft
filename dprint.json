@@ -12,7 +12,11 @@
       "binaryExpression.operatorPosition": "sameLine",
       "conditionalType.operatorPosition": "maintain",
       "conditionalType.preferSingleLine": false,
+      "exportDeclaration.sortTypeOnlyExports": "last",
+      "importDeclaration.sortTypeOnlyImports": "last",
+      "exportDeclaration.sortNamedExports": "caseSensitive",
       "importDeclaration.sortNamedImports": "caseSensitive",
+      "module.sortExportDeclarations": "caseSensitive",
       "module.sortImportDeclarations": "caseSensitive"
    },
    "json": {
@@ -28,8 +32,8 @@
       "**/dist"
    ],
    "plugins": [
-      "https://plugins.dprint.dev/typescript-0.86.1.wasm",
-      "https://plugins.dprint.dev/json-0.17.4.wasm",
-      "https://plugins.dprint.dev/markdown-0.15.3.wasm"
+      "https://plugins.dprint.dev/typescript-0.93.1.wasm",
+      "https://plugins.dprint.dev/json-0.19.4.wasm",
+      "https://plugins.dprint.dev/markdown-0.17.8.wasm"
    ]
 }
