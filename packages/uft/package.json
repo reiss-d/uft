@@ -1,6 +1,6 @@
 {
    "name": "uft",
-   "version": "0.3.1",
+   "version": "0.4.0",
    "license": "MIT",
    "description": "A collection of performant, strongly typed utilities to aid your Typescript application.",
    "homepage": "https://github.com/reiss-d/uft#readme",
@@ -62,27 +62,23 @@
       "build": "pnpm clean && concurrently \"node ./transpile.mjs\" \"pnpm emit\" \"pnpm copy\" && node ./post-build.mjs",
       "clean": "shx rm -rf dist && shx mkdir -p dist",
       "copy": " shx cp ../../README.md package.json LICENSE dist && json -I -f dist/package.json -e \"this.publishConfig=undefined; this.devDependencies=undefined; this.scripts=undefined;\"",
-      "emit": "tsup-node --config tsup.config.ts --dts-only",
+      "emit": "tsup-node --config tsup.config.mts --dts-only",
       "test": "jest",
       "typedoc": "typedoc",
       "release": ""
    },
    "dependencies": {
-      "@swc/helpers": "^0.5.3"
+      "@swc/helpers": "^0.5.15"
    },
    "devDependencies": {
-      "@swc/cli": "^0.1.62",
-      "@swc/core": "^1.3.82",
+      "@swc/cli": "^0.5.0",
+      "@swc/core": "^1.9.1",
       "@swc/helpers": "^0.5.1",
-      "@swc/jest": "^0.2.31",
-      "@types/jest": "^29.5.11",
-      "expect-type": "^0.16.0",
-      "jest": "^29.7.0",
-      "jest-chain": "^1.1.6",
-      "jest-extended": "^4.0.2",
+      "@swc/jest": "^0.2.37",
+      "expect-type": "^1.1.0",
       "tsconfig": "workspace:*",
-      "tsup": "^7.2.0",
-      "typescript": "^5.3.3"
+      "tsup": "^8.3.5",
+      "typescript": "^5.6.3"
    },
    "keywords": [
       "functional",

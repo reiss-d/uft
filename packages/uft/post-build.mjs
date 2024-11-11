@@ -1,6 +1,6 @@
-// @ts-check
-/* eslint-disable import/no-named-as-default-member */
-/* eslint-disable import/default */
+/* eslint-disable import-x/no-named-as-default-member */
+/* eslint-disable import-x/default */
+
 import fg from 'fast-glob'
 import * as fs from 'fs/promises'
 import { minimatch } from 'minimatch'
@@ -14,7 +14,7 @@ import { basename, extensionMap, extname, fileName } from './shared.mjs'
  */
 void async function fixImportExtensions() {
    const files = fg.sync([
-      `dist/(cjs|esm)/out/**/*.(js|mjs)`,
+      'dist/(cjs|esm)/out/**/*.(js|mjs)',
    ])
 
    await Promise.all(files.map(async (fileIn) => {
@@ -24,7 +24,6 @@ void async function fixImportExtensions() {
       try {
          let content = await fs.readFile(fileIn, 'utf8')
 
-         /* eslint-disable @typescript-eslint/no-unsafe-argument */
          content = content.replace(
             regex().require,
             (_, importPath) => {
@@ -84,7 +83,7 @@ function updateExtension(filePath, importPath, extension) {
    // )
    const isInternalFile = minimatch(
       filePath,
-      `dist/+(cjs|esm)/out/internal/*.+(js|mjs)`
+      'dist/+(cjs|esm)/out/internal/*.+(js|mjs)'
    )
    const base = basename(importPath)
 

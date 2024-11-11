@@ -2,13 +2,13 @@
    "$schema": "https://turbo.build/schema.json",
    "globalDependencies": ["**/.env*"],
    "globalEnv": ["NODE_ENV"],
-   "pipeline": {
+   "tasks": {
       "build": {
          "dependsOn": ["^build"],
          "inputs": [
             "src/**/*.ts",
             "src/**/*.tsx",
-            "!**/*.spec.*",
+            "!*/**/*.spec.*",
             ".swcrc",
             "tsup.config.ts",
             "post-build.mjs",
@@ -18,7 +18,7 @@
             "tsconfig.build.json"
          ],
          "outputs": ["dist/**"],
-         "outputMode": "new-only"
+         "outputLogs": "new-only"
       },
       "test": {
          "dependsOn": ["^test"],
@@ -32,7 +32,7 @@
             "tsconfig.json"
          ],
          "outputs": [],
-         "outputMode": "new-only"
+         "outputLogs": "new-only"
       },
       "dev": {
          "cache": false,

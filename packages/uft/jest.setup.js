@@ -1,3 +1,3 @@
-require('jest-chain')
 const matchers = require('jest-extended')
 expect.extend(matchers)
+require('jest-chain')

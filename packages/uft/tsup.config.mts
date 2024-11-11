@@ -1,3 +1,5 @@
+/* eslint-disable import-x/no-named-as-default-member */
+
 import fg from 'fast-glob'
 import { defineConfig } from 'tsup'
 import { fileName } from './shared.mjs'

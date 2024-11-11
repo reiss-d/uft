@@ -6,17 +6,22 @@ export type EmptyArray = [] | readonly []
 
 export type EmptyObject = Record<PropertyKey, never>
 
+/**
+ * Type that should never be reached.
+ *
+ * This should be used in place of `never` when we are 100% sure that a
+ * conditional branch will never be reached.
+ *
+ * @internal
+ */
+export type UNREACHABLE = never
+
 /* Is */
 
 export type Is<TType, TIs> = TType extends TIs ? TIs : never
 export type IsNot<TType, TNot> = TType extends TNot ? never : TType
 
 /* Utility */
-
-export type ValueOf<T> = T extends AnyArray ? T[number] : T[keyof T]
-
-export type ToMutableArray<T> = T extends AnyArray ? inferArrayType<T>[]
-   : never
 
 /**
  * Distributes over `T` and returns those that extend `U`.
@@ -33,6 +38,16 @@ export type ToMutableArray<T> = T extends AnyArray ? inferArrayType<T>[]
 export type AssignableTo<T, U> = T extends U ? T : never
 
 /**
+ * Returns `true` if `T` has all of the keys in `K`, otherwise `false`.
+ */
+export type ObjHasKeys<
+   T extends object,
+   K extends readonly PropertyKey[],
+> = [K[number]] extends [keyof T] ? true : false
+
+export type ValueOf<T> = T extends AnyArray ? T[number] : T[keyof T]
+
+/**
  * Use of brackets is important here to avoid distributing `T`
  * into separate arrays, for example:
  *
@@ -46,6 +61,9 @@ export type AssignableTo<T, U> = T extends U ? T : never
 export type ToArray<T> = inferArray<
    (T extends readonly (infer U)[] ? U : T)[]
 >
+
+export type ToMutableArray<T> = T extends AnyArray ? inferArrayType<T>[]
+   : never
 
 /**
  * Get the keys of a union type.

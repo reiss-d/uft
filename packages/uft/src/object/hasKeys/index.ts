@@ -1,5 +1,16 @@
 import { hasOwn } from '../../internal/builtin'
-import type { keyofUnion } from '../../types'
+import type { ObjHasKeys, UNREACHABLE, keyofUnion } from '../../types'
+
+type HasKeys<
+   T extends object,
+   K extends readonly PropertyKey[],
+> = ObjHasKeys<T, K> extends true ? {
+      [P in K[number]]: P extends keyof T ? T[P]
+         // ObjHasKeys ensures that all keys are present,
+         // the extends check is only to appease the compiler.
+         : UNREACHABLE
+   }
+   : never
 
 /**
  * Checks if an object has all of the provided own properties.
@@ -45,11 +56,12 @@ export function hasKeys<
 >(
    obj: T,
    keys: U
-): obj is T extends { [P in U[number]]: unknown } ? T : never
+): obj is T extends any ? T & HasKeys<T, U> : UNREACHABLE
 
+// Fallback
 export function hasKeys<T extends object>(
    obj: T,
-   keys: PropertyKey[]
+   keys: (keyof T)[]
 ): boolean
 
 export function hasKeys<T extends object>(
