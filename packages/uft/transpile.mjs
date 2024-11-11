@@ -1,4 +1,3 @@
-// @ts-check
 import { execa } from 'execa'
 
 /**
@@ -43,10 +42,10 @@ void async function transpile() {
       if (isDev) {
          args.push(...globalVar('__DEV__', `'true'`))
       } else {
-         args.push(...globalVar('__DEV__', `undefined`))
+         args.push(...globalVar('__DEV__', 'undefined'))
       }
 
-      console.log('swc' + ' ' + args.join(' '))
+      console.log(`swc ${args.join(' ')}`)
       return execa(
          'swc',
          args,

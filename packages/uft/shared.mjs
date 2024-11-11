@@ -1,4 +1,3 @@
-// @ts-check
 import * as path from 'path'
 
 /** @type {Record<string,string|undefined> } */

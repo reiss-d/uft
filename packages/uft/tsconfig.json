@@ -7,11 +7,16 @@
       "allowJs": true,
       "checkJs": true,
       "inlineSourceMap": true,
-      "types": ["jest", "jest-chain", "jest-extended", "node"]
+      "types": ["jest", "jest-extended", "jest-chain", "node"]
    },
+   "files": [
+      "../../node_modules/jest/build/index.d.ts",
+      "../../node_modules/jest-extended/types/index.d.ts",
+      "../../node_modules/jest-chain/types/index.d.ts"
+   ],
    "include": [
       "src",
-      "tsup.config.ts",
+      "tsup.config.mts",
       "transpile.mjs",
       "post-build.mjs",
       "shared.mjs"
