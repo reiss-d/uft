@@ -62,7 +62,7 @@
       "build": "pnpm clean && concurrently \"node ./transpile.mjs\" \"pnpm emit\" \"pnpm copy\" && node ./post-build.mjs",
       "clean": "shx rm -rf dist && shx mkdir -p dist",
       "copy": " shx cp ../../README.md package.json LICENSE dist && json -I -f dist/package.json -e \"this.publishConfig=undefined; this.devDependencies=undefined; this.scripts=undefined;\"",
-      "emit": "tsup-node --config tsup.config.ts --dts-only",
+      "emit": "tsup-node --config tsup.config.mts --dts-only",
       "test": "jest",
       "typedoc": "typedoc",
       "release": ""

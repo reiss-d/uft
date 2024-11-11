@@ -22,7 +22,7 @@
 
 // Is
 export { assert } from './is/assert'
-export { type Assert, createAssert } from './is/createAssert'
+export { createAssert, type Assert } from './is/createAssert'
 export { isDefined, isUndefined } from './is/isDefined'
 export { isError } from './is/isError'
 export { isFunction } from './is/isFunction'
