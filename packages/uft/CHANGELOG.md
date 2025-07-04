@@ -1,5 +1,16 @@
 # uft
 
+## 0.5.0
+
+### Minor Changes
+
+- feat: new method `lazy`
+- feat: new method `omit`
+
+### Patch Changes
+
+- fix: only return string key types in `forEachKey`
+
 ## 0.4.0
 
 ### Minor Changes
