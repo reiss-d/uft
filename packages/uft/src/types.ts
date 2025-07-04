@@ -48,6 +48,22 @@ export type ObjHasKeys<
 export type ValueOf<T> = T extends AnyArray ? T[number] : T[keyof T]
 
 /**
+ * If `T` is a `string` or `number`, it is coerced to a `string`, otherwise
+ * `never` is returned.
+ */
+export type CoerceString<T> = T extends string ? T
+   : T extends number ? `${T}`
+   : never
+
+/**
+ * If `T` is a `string` or `number`, it is coerced to a `number`, otherwise
+ * `never` is returned.
+ */
+export type CoerceNumber<T> = T extends number ? T
+   : T extends `${infer U extends number}` ? U
+   : never
+
+/**
  * Use of brackets is important here to avoid distributing `T`
  * into separate arrays, for example:
  *

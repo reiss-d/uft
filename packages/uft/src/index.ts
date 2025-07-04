@@ -60,6 +60,7 @@ export { toArray } from './coerce/toArray'
 export { forEachKey } from './object/forEachKey'
 export { hasKeys } from './object/hasKeys'
 export { mapKeys } from './object/mapKeys'
+export { omit } from './object/omit'
 export { reduceKeys } from './object/reduceKeys'
 export { typedKeys } from './object/typedKeys'
 
