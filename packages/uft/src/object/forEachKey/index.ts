@@ -1,5 +1,7 @@
 import { hasOwn } from '../../internal/builtin'
 
+type StringKeys<T> = T extends string ? T : T extends number ? `${T}` : never
+
 /**
  * Calls a function for each key in an object.
  *
@@ -22,7 +24,8 @@ import { hasOwn } from '../../internal/builtin'
  */
 export const forEachKey = <T extends object>(
    obj: T,
-   callback: <K extends keyof T>(key: K, obj: T) => void
+   callback: (key: StringKeys<keyof T>, obj: T) => void
+   // callback: (key: Extract<keyof T, string>, obj: T) => void
 ): void => {
    for (const key in obj) {
       if (hasOwn(obj, key)) {
