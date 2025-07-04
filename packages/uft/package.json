@@ -68,17 +68,17 @@
       "release": ""
    },
    "dependencies": {
-      "@swc/helpers": "^0.5.15"
+      "@swc/helpers": "^0.5.17"
    },
    "devDependencies": {
-      "@swc/cli": "^0.5.0",
-      "@swc/core": "^1.9.1",
+      "@swc/cli": "^0.5.2",
+      "@swc/core": "^1.12.9",
       "@swc/helpers": "^0.5.1",
-      "@swc/jest": "^0.2.37",
-      "expect-type": "^1.1.0",
+      "@swc/jest": "^0.2.38",
+      "expect-type": "^1.2.1",
       "tsconfig": "workspace:*",
-      "tsup": "^8.3.5",
-      "typescript": "^5.6.3"
+      "tsup": "^8.5.0",
+      "typescript": "^5.8.3"
    },
    "keywords": [
       "functional",
