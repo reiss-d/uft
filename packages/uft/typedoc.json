@@ -19,7 +19,6 @@
    "categorizeByGroup": true,
    "excludeExternals": true,
    "excludeInternal": true,
-   "hideParameterTypesInTitle": false,
    "darkHighlightTheme": "github-dark",
    "plugin": [
       "typedoc-plugin-missing-exports",
