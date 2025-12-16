@@ -1,5 +1,11 @@
 # uft
 
+## 0.5.2
+
+### Patch Changes
+
+- feat: new methods `lazyObj` and `lazyFn`
+
 ## 0.5.1
 
 ### Patch Changes
