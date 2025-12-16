@@ -73,6 +73,8 @@ export type {
 } from './misc/allSettled'
 export { createEq } from './misc/createEq'
 export { lazy } from './misc/lazy'
+export { lazyCtor, lazyFn } from './misc/lazyFn'
+export { lazyObj } from './misc/lazyObj'
 export { noop } from './misc/noop'
 export { isRetryOK, retry, type RetryResult } from './misc/retry'
 export { timeout } from './misc/timeout'

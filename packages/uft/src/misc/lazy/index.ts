@@ -1,3 +1,6 @@
+// Referenced in JSDoc.
+import type { lazyObj } from '../lazyObj'
+
 export type LazyOptions<T> = {
    /**
     * A function returning a boolean that determines whether the value should be
@@ -29,9 +32,9 @@ export type LazyOptions<T> = {
  * The given function is only called once and the result is cached, which is
  * returned on subsequent calls.
  *
- * The given function is called the first time the returned function executes,
- * storing its result. On subsequent calls, the cached value is returned unless
- * the optional `shouldReinitialize` callback returns `true`, in which case the
+ * The given function is called the first time the returned lazy function
+ * executes. On subsequent calls, the cached value is returned unless the
+ * optional `shouldReinitialize` callback returns `true`, in which case the
  * cached value is discarded and reinitialized.
  *
  * @param fn A function initializing the value.
@@ -40,7 +43,8 @@ export type LazyOptions<T> = {
  *
  * @remarks
  * It is safe for the given function to return `undefined`, this will not cause
- * it to be called again.
+ * it to be called again. If you don't want to call a function every time you
+ * need the value, try using {@link lazyObj `lazyObj`} instead.
  *
  * @example
  * #### Basic usage

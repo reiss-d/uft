@@ -1,12 +1,5 @@
+import { Counter } from '../../test.utils'
 import { lazy } from './index'
-
-class Counter {
-   constructor(public count = 0) {}
-   inc(): number {
-      this.count++
-      return this.count
-   }
-}
 
 describe('misc/lazy', () => {
    test('only calls the function once', () => {

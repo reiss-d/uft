@@ -8,3 +8,11 @@ export function randChoice<A, B, C, D>(a: A, b: B, c: C, d: D): A | B | C | D
 export function randChoice(...choices: unknown[]): unknown {
    return choices[randomInt(0, choices.length - 1)]
 }
+
+export class Counter {
+   constructor(public count = 0) {}
+   inc(): number {
+      this.count++
+      return this.count
+   }
+}

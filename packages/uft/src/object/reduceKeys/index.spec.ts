@@ -1,12 +1,6 @@
 import { expectTypeOf } from 'expect-type'
+import { Counter } from '../../test.utils'
 import { reduceKeys } from './index'
-
-class Counter {
-   count = 0
-   add() {
-      this.count++
-   }
-}
 
 describe('object/reduceKeys', () => {
    test('works with object `initialValue`', () => {
@@ -111,7 +105,7 @@ describe('object/reduceKeys', () => {
 
       reduceKeys({ a: 1, b: 2, c: 3, d: 4 }, (accum, _, currentIndex) => {
          index = currentIndex
-         c.add()
+         c.inc()
          return accum
       })
       expect(index).toBe(3)
@@ -120,7 +114,7 @@ describe('object/reduceKeys', () => {
 
       reduceKeys({ a: 1, b: 2, [Symbol('c')]: 3 }, (accum, _, currentIndex) => {
          index = currentIndex
-         c.add()
+         c.inc()
          return accum
       })
       expect(index).toBe(1)
@@ -136,7 +130,7 @@ describe('object/reduceKeys', () => {
 
       reduceKeys(obj, (accum, _, currentIndex) => {
          index = currentIndex
-         c.add()
+         c.inc()
          return accum
       })
       expect(index).toBe(0)
